@@ -138,7 +138,7 @@ int changeRadix(int *p, int len, int *l, int r, int r0){
             if (j==0 && k>=Len) break;
             if (L==r) {
                 ptemp[k+1] = j;
-                t1 = pow(10.0, 1.0*r);
+                t1 = (int)pow(10.0, 1.0*r);
                 ptemp[k+2] = p[k+1-m]%t1;
                 j = p[k+1-m]/t1; L = 1;
                 if (j==0 && (k+2)>=Len) break;
@@ -201,7 +201,7 @@ int factorial_radix_sum(int *b, int *fact_n, int *len, int n){
     return r;
 }
 
-int factorial(int n, char *fact_s, int *len)
+int _CFACTORIAL(int n, char *fact_s, int *len)
 {
 	int i,*fact_n,r;
 
@@ -219,7 +219,7 @@ int factorial(int n, char *fact_s, int *len)
 		i = n;
 		while(i/10){ i = i/10; Ln++;}
 		r = (Ln<4)?6:(9-Ln);
-		L=(Ln-1+i*0.5)*n;
+		L=(Ln-1+(int)(i*0.5))*n;
 		fact_n = (int *)malloc(sizeof(int)*L);
 		len[2]=L; len[3]=0;
 		fact_n[0]=1;
@@ -248,7 +248,7 @@ int factorial(int n, char *fact_s, int *len)
 	return 1;
 }
 
-int factorial_sum(int n, char *fact_s, char *fact_sum, int *len )
+int _CFACTORIAL_SUM(int n, char *fact_s, char *fact_sum, int *len )
 {
 	int i,*fact_n, r;
 	for(i=0;i<5;i++) len[i] = 1;
@@ -266,7 +266,7 @@ int factorial_sum(int n, char *fact_s, char *fact_sum, int *len )
 		int j,L,curr_len, Ln=1;
 		i = n;
 		while(i/10){i = i/10; Ln++;	}
-		L=(Ln-1+i*0.5)*n;
+		L=(Ln-1+(int)(i*0.5))*n;
 		r = (Ln<4)?6:(9-Ln);
 		fact_n = (int *)malloc(sizeof(int)*L);
 		int *bb = (int*) malloc(sizeof(int)*L);
