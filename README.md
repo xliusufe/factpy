@@ -9,13 +9,13 @@ Python package "factpy" calculates the factorial of a large integer, which may b
 - Syntax: `fact(n,is_sums)`
     - Input:
         - `n`: a natural number 
-        - `is_sums`: logical indicating that fact calculates the sum of factorials from 1 to n (factsums = 1!+2!+3!+...). factsums is calcuated if `is_sums=True` or `is_sums=1`, do not otherwise. The default is `False`.
+        - `is_sums`: logical indicating that fact calculates the sum of factorials from 1 to n (`factsums` = 1!+2!+3!+...). `factsums` is calcuated if `is_sums=True` or `is_sums=1`, do not otherwise. The default is `False`.
 
     - Output is a dictionary with keys:
-        - facts: the factorial of n. It is a string.
-        - factsums: the sum of factorials from 1 to n if `is_sum` is True.
-        - len_fact: the length of the factorial.
-        - nzeros: the number of zeros in the factorial.
+        - `facts`: the factorial of n. It is a string.
+        - `factsums`: the sum of factorials from 1 to n if `is_sum` is True.
+        - `len_fact`: the length of the factorial.
+        - `nzeros`: the number of zeros in the factorial.
 
 
    
