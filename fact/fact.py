@@ -1,4 +1,4 @@
-from factpy import *
+from ._factpy import CFACTORIAL_, CFACTORIAL_SUM_
 
 
 def fact(n,is_sums=False):
