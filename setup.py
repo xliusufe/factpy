@@ -2,7 +2,7 @@ from setuptools import setup, Extension, find_packages
 import numpy
 
 VERSION = '1.0'
-extensions = Extension(name = 'factpy',  # name of our extension module
+extensions = Extension(name = 'fact._factpy',  # name of our extension module
                         sources = ['src/cfactorial.c', 'src/_cfactorial.c'],
                         include_dirs = ['src'],
                         language='c++' 
@@ -12,6 +12,7 @@ extensions = Extension(name = 'factpy',  # name of our extension module
 setup(
     name='factpy', # A name show on Pypi.
     version=VERSION, 
+    packages = ['fact'],
     ext_modules = [extensions],
     license='MIT',
     description='A Python pacakge to calculate the factorial of a natural number',
