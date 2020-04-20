@@ -47,7 +47,7 @@ Python package "factpy" calculates the factorial of a large integer, which may b
     print(fit['nzeros'])
 
 # Example 2
-    import fact.fact as fs
+    import fact as fs
 
     fit <- fs.fact(10)
 

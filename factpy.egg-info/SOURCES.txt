@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+fact/__init__.py
+fact/fact.py
+factpy.egg-info/PKG-INFO
+factpy.egg-info/SOURCES.txt
+factpy.egg-info/dependency_links.txt
+factpy.egg-info/top_level.txt
+src/_cfactorial.c
+src/cfactorial.c
