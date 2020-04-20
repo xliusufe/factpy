@@ -51,17 +51,16 @@ Python package "factpy" calculates the factorial of a large integer, which may b
 
     fit <- fs.fact(10)
 
-    fit = fact(10)
-    # fit = fact(10,0)
-    # fit = fact(10,False)
+    # fit = fs.fact(10,0)
+    # fit = fs.fact(10,False)
 
     print(fit['facts'])
     print(fit['len_fact'])
     print(fit['nzeros'])
     #------------------------
 
-    fit = fact(10,1)
-    # fit = fact(10,True)
+    fit = fs.fact(10,1)
+    # fit = fs.fact(10,True)
 
     print(fit['facts'])
     print(fit['factsums'])
