@@ -5,5 +5,5 @@
 # @Site    : 'https://github.com/xliusufe/factpy/'
 # @File    : __init__.py
 
-from .factpy import fact
+from .fact import fact
 __all__ = 'fact'
