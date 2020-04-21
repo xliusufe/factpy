@@ -27,7 +27,7 @@ Python package "factpy" calculates the factorial of a large integer, which may b
    
 # Example 1
 
-    from fact import fact
+    from factpy import fact
 
     fit = fact(10)
     # fit = fact(10,0)
@@ -47,12 +47,12 @@ Python package "factpy" calculates the factorial of a large integer, which may b
     print(fit['nzeros'])
 
 # Example 2
-    import fact as fs
+    import factpy as fp
 
-    fit <- fs.fact(10)
+    fit <- fp.fact(10)
 
-    # fit = fs.fact(10,0)
-    # fit = fs.fact(10,False)
+    # fit = fp.fact(10,0)
+    # fit = fp.fact(10,False)
 
     print(fit['facts'])
     print(fit['len_fact'])

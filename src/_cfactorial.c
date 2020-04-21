@@ -81,14 +81,14 @@ static PyMethodDef MydemoMethods[] = {// "CFACTORIAL_" in py_CFACTORIAL_ must be
 /* Module structure */
 static struct PyModuleDef factpymodule = {
     PyModuleDef_HEAD_INIT,
-    "_factpy",           /* name of module */
+    "_FACTPY",           /* name of module */
     module_docs,        /* Doc string (may be NULL) */
     -1,                 /* Size of per-interpreter state or -1 */
     MydemoMethods       /* Method table */
 };
 
 /* Module initialization function */
-PyMODINIT_FUNC PyInit__factpy(void) {
+PyMODINIT_FUNC PyInit__FACTPY(void) {
     PyObject *object = PyModule_Create(&factpymodule);
     if(object == NULL) {
         return NULL;
