@@ -29,6 +29,8 @@ static PyObject *py_CFACTORIAL_(PyObject *self, PyObject *args) {
     npy_intp dims1[1] = {5};
     PyObject *ret_len = PyArray_SimpleNewFromData(1, dims1, NPY_INT, len1);
 
+    free(fact);
+    free(len1);
     return Py_BuildValue("{s:O,s:O}", "fact", ret, "fact_len", ret_len);
 }
 
@@ -58,6 +60,10 @@ static PyObject *py_CFACTORIAL_SUM_(PyObject *self, PyObject *args) {
 
     npy_intp dims1[1] = {5};
     PyObject *ret_len = PyArray_SimpleNewFromData(1, dims1, NPY_INT, len1);    
+
+    free(fact);
+    free(len1);
+    free(factsum);
     return Py_BuildValue("{s:O,s:O,s:O}", "fact", ret, "fact_sum", ret_sum, "fact_len", ret_len);    
 }
 
